@@ -2,6 +2,7 @@
 @import "security.css";
 @import "logo.css";
 @import "icons.css";
+@import "buttons.css";
 
 .mikio-breadcrumbs {
   display: none;
