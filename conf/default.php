@@ -9,28 +9,28 @@
  */
 
 $conf['iconTag']                = 'icon';
-$conf['customTheme']            = '';
+$conf['customTheme']            = 'nyc-dsa';
 $conf['showNotifications']      = 'always';
 $conf['useLESS']                = 1;
 $conf['brandURLGuest']          = '';
 $conf['brandURLUser']           = '';
-$conf['showLightDark']          = 0;
+$conf['showLightDark']          = 1;
 $conf['autoLightDark']          = 0;
 $conf['defaultDark']            = 0;
 
 $conf['navbarUseTitleIcon']     = 1;
-$conf['navbarTitleIconHeight']  = '';
+$conf['navbarTitleIconHeight']  = '2rem';
 $conf['navbarTitleIconWidth']   = '';
-$conf['navbarUseTitleText']     = 1;
-$conf['navbarUseTaglineText']   = 1;
+$conf['navbarUseTitleText']     = 0;
+$conf['navbarUseTaglineText']   = 0;
 $conf['navbarCustomMenuText']   = '';
 $conf['navbarCustomTitleFormat'] = '%page% [%wiki%]';
 
 $conf['navbarDWMenuType']       = 'icons';
-$conf['navbarDWMenuCombine']    = 'dropdown';
+$conf['navbarDWMenuCombine']    = 'combine';
 
 $conf['navbarPosLeft']          = 'custom';
-$conf['navbarPosMiddle']        = 'search';
+$conf['navbarPosMiddle']        = 'none';
 $conf['navbarPosRight']         = 'dokuwiki';
 $conf['navbarShowSub']          = 0;
 
@@ -49,11 +49,11 @@ $conf['navbarItemShowLogout']   = 'always';
 $conf['searchButton']           = 'icon';
 $conf['searchUseTypeahead']     = 1;
 
-$conf['heroTitle']              = 1;
-$conf['heroImagePropagation']   = 1;
+$conf['heroTitle']              = 0;
+$conf['heroImagePropagation']   = 0;
 
 $conf['tagsConsolidate']        = 1;
-$conf['tagsShowHero']           = 1;
+$conf['tagsShowHero']           = 0;
 
 $conf['breadcrumbHideHome']     = 1;
 $conf['breadcrumbPosition']     = 'hero';
@@ -78,7 +78,7 @@ $conf['sidebarLeftRow2']        = 'search';
 $conf['sidebarLeftRow3']        = 'content';
 $conf['sidebarLeftRow4']        = 'none';
 $conf['sidebarMobileDefaultCollapse']    = 1;
-$conf['sidebarShowRight']       = 1;
+$conf['sidebarShowRight']       = 0;
 $conf['sidebarAlwaysShowRight'] = 0;
 
 $conf['tocFull']                = 0;
