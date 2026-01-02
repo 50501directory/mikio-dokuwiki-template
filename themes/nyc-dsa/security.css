@@ -7,6 +7,6 @@
   display: none !important;
 }
 
-form.dw__login div.no {
-  display: none;
+div.no {
+  display: none !important;
 }
