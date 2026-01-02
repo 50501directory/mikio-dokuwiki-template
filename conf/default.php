@@ -73,9 +73,9 @@ $conf['youarehereShowLast']     = 0;
 
 $conf['sidebarShowLeft']        = 1;
 $conf['sidebarAlwaysShowLeft']  = 0;
-$conf['sidebarLeftRow1']        = 'logged in user';
-$conf['sidebarLeftRow2']        = 'search';
-$conf['sidebarLeftRow3']        = 'content';
+$conf['sidebarLeftRow1']        = 'search';
+$conf['sidebarLeftRow2']        = 'content';
+$conf['sidebarLeftRow3']        = 'none';
 $conf['sidebarLeftRow4']        = 'none';
 $conf['sidebarMobileDefaultCollapse']    = 1;
 $conf['sidebarShowRight']       = 0;
