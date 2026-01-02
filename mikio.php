@@ -1268,7 +1268,7 @@ data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' .
             $options = [
                 'file' => '<bdi>' . $file . '</bdi>',
                 'date' => $date,
-                'user' => $INFO['editor'] ? '<bdi>' . editorinfo($INFO['editor']) . '</bdi>' : $lang['external_edit']
+                'user' => 'an NYC-DSA Member' # $INFO['editor'] ? '<bdi>' . editorinfo($INFO['editor']) . '</bdi>' : $lang['external_edit']
             ];
 
             if (!empty($_SERVER['REMOTE_USER'])) {
