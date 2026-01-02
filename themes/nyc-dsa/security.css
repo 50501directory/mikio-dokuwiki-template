@@ -6,3 +6,7 @@
 .li a[href*="page=usermanager"] {
   display: none !important;
 }
+
+form.dw__login div.no {
+  display: none;
+}
