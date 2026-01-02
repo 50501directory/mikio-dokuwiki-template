@@ -1,0 +1,15 @@
+/* Logo */
+picture.mikio-navbar-brand-logo {
+  display: flex;
+  align-items: center;
+}
+
+img.mikio-navbar-logo-img {
+  max-width: 40rem;
+}
+
+@media (max-width: 768px) {
+  img.mikio-navbar-logo-img {
+    max-width: 4rem;
+  }
+}

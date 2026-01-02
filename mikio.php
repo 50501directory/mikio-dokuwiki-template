@@ -865,41 +865,28 @@ data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' .
             // Brand image
             if ($this->getConf('navbarUseTitleIcon') === true) {
                 $logo = $this->getMediaFile('logo', false);
+                $logoMobile = $this->getMediaFile('logo-mobile', false);
                 $logoDark = $this->getMediaFile('logo-dark', false);
-                if (empty($logo) === false || empty($logoDark) === false) {
-                    $width = $this->getConf('navbarTitleIconWidth');
+                $logoDarkMobile = $this->getMediaFile('logo-mobile-dark', false);
+                
+                if ($logo || $logoMobile || $logoDark || $logoDarkMobile) {
+                    $width  = $this->getConf('navbarTitleIconWidth');
                     $height = $this->getConf('navbarTitleIconHeight');
-                    $styles = '';
+                    $html .= '<picture class="mikio-navbar-brand-logo">';
 
-                    if ($width !== '' || $height !== '') {
-                        if (ctype_digit($width) === true) {
-                            $styles .= 'width:' . (int)$width . 'px;';
-                        } elseif (preg_match('/^\d+(px|rem|em|%)$/', $width) === 1) {
-                            $styles .= 'width:' . $width . ';';
-                        } elseif (strcasecmp($width, 'none') === 0) {
-                            $styles .= 'width:none;';
-                        }
-
-                        if (ctype_digit($height) === true) {
-                            $styles .= 'height:' . (int)$height . 'px;';
-                        } elseif (preg_match('/^\d+(px|rem|em|%)$/', $height) === 1) {
-                            $styles .= 'height:' . $height . ';';
-                        } elseif (strcasecmp($height, 'none') === 0) {
-                            $styles .= 'height:none;';
-                        }
-
-                        if ($styles !== '') {
-                            $styles = ' style="' . $styles . 'max-width:none;max-height:none;"';
-                        }
-                    }//end if
-
-                    if(empty($logo) === false) {
-                        $html .= '<img src="' . $logo . '" alt="'. strip_tags($conf['title']) .' logo" class="mikio-navbar-brand-image' . (empty($logoDark) === false ? ' mikio-light-only' : '') . '"' . $styles . '>';
+                    if ($logoDarkMobile) {
+                        $html .= '<source media="(max-width: 768px) and (prefers-color-scheme: dark)" srcset="' . $logoDarkMoble . '">';
+                    }
+                    if ($logoMobile) {
+                        $html .= '<source media="(max-width: 768px)" srcset="' . $logoMobile . '">';
+                    }
+                    if ($logoDark) {
+                        $html .= '<source media="(prefers-color-scheme: dark)" srcset="' . $logoDark . '">';
                     }
 
-                    if (empty($logoDark) === false) {
-                        $html .= '<img src="' . $logoDark . '" class="mikio-navbar-brand-image' . (empty($logo) === false ? ' mikio-dark-only' : '') . '"' . $styles . '>';
-                    }
+                    $html .= '<img src="' . $logo . '" alt="Logo" class="mikio-navbar-logo-img">';
+
+                    $html .= "</picture>";
                 }//end if
             }//end if
 

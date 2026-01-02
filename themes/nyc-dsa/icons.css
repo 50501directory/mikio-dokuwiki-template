@@ -1,0 +1,10 @@
+/* Icons in navbar and footer. */
+.mikio-navbar,
+.mikio-footer {
+  --control-text-color: #fff;
+}
+
+/* Icons on admin page */
+.dokuwiki div.ui-admin ul.admin_tasks li a span.icon svg path {
+  fill: #fff;
+}

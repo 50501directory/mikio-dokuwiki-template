@@ -1,0 +1,8 @@
+/* Hide local login. */
+#user__manager {
+  display: none !important;
+}
+
+.li a[href*="page=usermanager"] {
+  display: none !important;
+}
