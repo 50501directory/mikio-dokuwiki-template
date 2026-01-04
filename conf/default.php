@@ -30,7 +30,7 @@ $conf['navbarDWMenuType']       = 'icons';
 $conf['navbarDWMenuCombine']    = 'combine';
 
 $conf['navbarPosLeft']          = 'custom';
-$conf['navbarPosMiddle']        = 'none';
+$conf['navbarPosMiddle']        = 'search';
 $conf['navbarPosRight']         = 'dokuwiki';
 $conf['navbarShowSub']          = 0;
 
@@ -73,8 +73,8 @@ $conf['youarehereShowLast']     = 0;
 
 $conf['sidebarShowLeft']        = 1;
 $conf['sidebarAlwaysShowLeft']  = 0;
-$conf['sidebarLeftRow1']        = 'search';
-$conf['sidebarLeftRow2']        = 'content';
+$conf['sidebarLeftRow1']        = 'content';
+$conf['sidebarLeftRow2']        = 'none';
 $conf['sidebarLeftRow3']        = 'none';
 $conf['sidebarLeftRow4']        = 'none';
 $conf['sidebarMobileDefaultCollapse']    = 1;
