@@ -7,3 +7,11 @@
 .mikio-breadcrumbs {
   display: none;
 }
+
+h2 {
+  margin-block-start: 0rem;
+}
+
+.dokuwiki [data-linkfavicon] {
+  background-color: none;
+}
