@@ -13,5 +13,5 @@ h2 {
 }
 
 .dokuwiki [data-linkfavicon] {
-  background-color: transparent;
+  background-color: transparent !important;
 }
