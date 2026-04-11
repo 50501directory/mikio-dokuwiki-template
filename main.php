@@ -90,6 +90,7 @@ ob_start();
                 if($TEMPLATE->hideTOC() === false) {
                     $TEMPLATE->includeTOC();
                 }
+            echo '<div class="mikio-tags"></div>';
     if ($ACT === 'show') {
         $TEMPLATE->includePage('contentheader', true, true, 'mikio-page-contentheader');
     }
