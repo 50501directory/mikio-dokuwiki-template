@@ -3,6 +3,7 @@
 @import "logo.css";
 @import "icons.css";
 @import "buttons.css";
+@import "grid.css";
 
 .mikio-breadcrumbs {
   display: none;
