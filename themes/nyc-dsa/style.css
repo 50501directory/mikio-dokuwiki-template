@@ -16,3 +16,12 @@ h2 {
 .dokuwiki [data-linkfavicon] {
   background-color: transparent !important;
 }
+
+.mikio-content {
+  min-width: 0;
+}
+
+.mikio-article-content div.table {
+  overflow-x: auto;
+  max-width: 100%;
+}
