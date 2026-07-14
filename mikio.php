@@ -864,10 +864,10 @@ data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' .
         if ($this->getConf('navbarUseTitleIcon') === true || $this->getConf('navbarUseTitleText') === true) {
             // Brand image
             if ($this->getConf('navbarUseTitleIcon') === true) {
-                $logo = $this->getMediaFile('logo', false);
-                $logoMobile = $this->getMediaFile('logo-mobile', false);
-                $logoDark = $this->getMediaFile('logo-dark', false);
-                $logoDarkMobile = $this->getMediaFile('logo-mobile-dark', false);
+                $logo = $this->getMediaFile('public:logo', false);
+                $logoMobile = $this->getMediaFile('public:logo-mobile', false);
+                $logoDark = $this->getMediaFile('public:logo-dark', false);
+                $logoDarkMobile = $this->getMediaFile('public:logo-mobile-dark', false);
                 
                 if ($logo || $logoMobile || $logoDark || $logoDarkMobile) {
                     $width  = $this->getConf('navbarTitleIconWidth');
