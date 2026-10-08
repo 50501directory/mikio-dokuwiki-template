@@ -1,0 +1,69 @@
+/* Navbar search input + full search results page */
+
+/* Let search input/menu area shrink */
+.mikio-navbar .mikio-navbar-collapse {
+  flex: 1 1 auto;
+}
+
+.mikio-navbar {
+  /* Keep search results above "Sidebar" */
+  z-index: 1002;
+
+  .mikio-nav-item #dw__search {
+    position: relative;
+
+    .no {
+      min-width: 10rem; /* Floor for search input shrinking */
+
+      /* Full width search input on narrow screens */
+      @media (max-width: 768px) {
+        flex: 1 1 auto; 
+      }
+    }
+
+    /* Hide DokuWiki's built-in quick search.
+       It's redundant with typeahead results. */
+    #qsearch__out {
+      display: none !important;
+    }
+
+    /* Typeahead results grow left from the search input's right edge.
+       !important overrides inline styles set by the script. */
+    .typeahead.mikio-dropdown {
+      left: auto !important;
+      right: 0 !important;
+      width: max-content !important;
+      max-width: 32rem;
+      box-sizing: border-box;
+      text-align: left;
+      white-space: nowrap;
+
+      a.mikio-dropdown-item {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: var(--dropdown-color); /* Stop using navbar link color */
+
+        &:hover,
+        &.active {
+          background-color: var(--dropdown-hover-color);
+        }
+      }
+
+      /* Wider search input on narrow screens (keep last) */
+      @media (max-width: 768px) {
+        width: 100% !important;
+        min-width: 0;
+        max-width: none;
+      }
+    }
+  }
+}
+
+/* Search results page: one column, margin between items */
+.mikio .dokuwiki .search_quickresult li {
+  float: none;
+  width: auto;
+  margin: 0.5em 1.5em;
+  overflow-wrap: anywhere;
+}

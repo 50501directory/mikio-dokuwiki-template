@@ -4,6 +4,7 @@
 @import "icons.css";
 @import "buttons.css";
 @import "grid.css";
+@import "search.css";
 
 .mikio-breadcrumbs {
   display: none;
